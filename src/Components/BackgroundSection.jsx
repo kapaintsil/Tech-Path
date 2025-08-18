@@ -1,5 +1,5 @@
 import React from "react";
-import "./BackGroundSection.css"; // Adjust the path as necessary
+import "./BackgroundSection.css"; // Adjust the path as necessary
 
 const BackgroundSection = () => (
   <div className="background">
