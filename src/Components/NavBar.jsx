@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./NavBar.css";
+import ThemeToggle from "./ThemeToggle";
 
 const NavBar = () => {
   const navigate = useNavigate();
@@ -22,6 +23,7 @@ const NavBar = () => {
       </div>
 
       <div className="right-section">
+        <ThemeToggle />
         {/* Dropdown Menu */}
         <div className="dropdown">
           <div className="menu-button">
