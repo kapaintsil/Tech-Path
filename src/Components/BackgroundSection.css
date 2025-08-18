@@ -1,0 +1,60 @@
+.background {
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+  font-family: "Segoe UI", sans-serif;
+  min-height: 100vh;
+  user-select: none;
+}
+
+.website-name {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.motto {
+  text-align: center;
+  font-size: 1.4rem;
+  color: #555;
+  margin-bottom: 40px;
+  font-style: italic;
+}
+
+/* Card container */
+.introduction {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Individual card */
+.introduction p {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.06);
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.6;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.introduction p:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .website-name {
+    font-size: 2.2rem;
+  }
+
+  .motto {
+    font-size: 1.1rem;
+  }
+}

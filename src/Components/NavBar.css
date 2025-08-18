@@ -1,0 +1,101 @@
+
+.header {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1e1e2f;
+  color: white;
+  padding: 15px 30px;
+  font-family: "Segoe UI", sans-serif;
+  /* position: relative; */
+  z-index: 10;
+  right: 0;
+  top: 0;
+  left: 0;
+}
+
+.left-section .codenex-logo-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+}
+
+.menu-button {
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 5px 10px;
+  color: #ffffff;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: -10px;
+  /* top: 120%; */
+  background-color: #2d2d44;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  min-width: 220px;
+  padding: 10px 0;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px 20px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.dropdown-content a:hover {
+  cursor: pointer;
+  background-color: #3f3f5e;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Home Icon Button */
+.home-icon-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 1.3rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.home-icon-button .tooltip {
+  visibility: hidden;
+  opacity: 0;
+  background-color: #333;
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 4px 8px;
+  border-radius: 4px;
+  position: absolute;
+  top: -30px;
+  white-space: nowrap;
+  transition: opacity 0.3s;
+}
+
+.home-icon-button:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}

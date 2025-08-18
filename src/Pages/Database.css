@@ -1,0 +1,89 @@
+.course-section {
+  /* max-width: 1100px; */
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #fff;
+}
+
+.database-topic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.database-image {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+}
+
+.sql-photos {
+  cursor: pointer;
+  width: 300px;
+  margin: 40px 40px;
+}
+
+.sql-photos:hover {
+  width: 500px;
+}
+
+.database-strong {
+  color: #2b6cb0;
+}
+
+.course-section h3 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.course-section p {
+  margin-bottom: 1rem;
+}
+
+.course-section ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+.course-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* Links Styling */
+.course-section a {
+  color: #2b6cb0;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.course-section a:hover {
+  color: #1a4d80;
+  text-decoration: underline;
+}
+
+.files-buttons div b {
+  font-size: 0.7rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .database-topic {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .database-image {
+    width: 60px;
+    height: 60px;
+  }
+
+  .course-section h3 {
+    font-size: 1.5rem;
+  }
+}

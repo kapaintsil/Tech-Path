@@ -1,0 +1,29 @@
+footer {
+  user-select: none;
+  background-color: #f9fafb;
+  /* color: #f1f1f1; */
+  padding: 2rem 1rem;
+  text-align: center;
+  font-size: 0.95rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border-top: 1px solid #333;
+  margin-top: auto;
+}
+
+footer p {
+  margin: 0.5rem 0;
+  line-height: 1.6;
+}
+
+footer sup {
+  font-size: 0.6rem;
+  vertical-align: super;
+  opacity: 0.6;
+}
+
+@media (max-width: 600px) {
+  footer {
+    font-size: 0.85rem;
+    padding: 1.5rem 1rem;
+  }
+}

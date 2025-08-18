@@ -1,0 +1,185 @@
+/* JavaScriptSection.css */
+
+/* Container */
+.course-section {
+  /* max-width: 900px; */
+  margin: 40px auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Topic header */
+.javascript-topic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.javascript-image {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.jsphoto:hover {
+  cursor: pointer;
+  width: 700px;
+}
+
+.javascript-strong {
+  color: #f0db4f; /* JavaScript yellow */
+  font-size: 1.8rem;
+}
+
+/* Headings */
+h3 {
+  color: #2b6cb0;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+/* Paragraphs */
+p {
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+/* Bold text */
+b {
+  font-weight: 700;
+}
+
+/* Lists */
+ul[type='disc'],
+ol[type='1'] {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+li {
+  margin-bottom: 12px;
+}
+
+/* Code wrapper */
+.cpp-code-wrapper {
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+  padding: 20px;
+  border-radius: 8px;
+  font-family: 'Source Code Pro', monospace, monospace;
+  font-size: 0.95rem;
+  overflow-x: auto;
+  margin-bottom: 20px;
+}
+
+/* Code syntax colors */
+.cpp-code-comment {
+  color: #6a9955;
+  font-style: italic;
+}
+
+.strong-blue {
+  color: #569cd6;
+  font-weight: 700;
+}
+
+.strong-green {
+  color: #6a9955;
+  font-weight: 700;
+}
+
+.strong-red {
+  color: #f44747;
+  font-weight: 700;
+}
+
+.strong-pink {
+  color: #c586c0;
+  font-weight: 700;
+}
+
+/* Images in center container */
+.jsphoto {
+  width: 300px;
+  height: auto;
+  margin: 10px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Resource links container */
+.websites-link-button {
+  border: none;
+  padding: 12px 15px;
+  margin: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.websites-link-button a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Button hover */
+.websites-link-button:hover {
+  filter: brightness(1.1);
+}
+
+/* Links inside buttons */
+.websites-link-button b {
+  user-select: none;
+}
+
+/* Iframe container styling */
+iframe {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .jsphoto {
+    width: 45vw;
+  }
+
+  iframe {
+    width: 90vw !important;
+    height: auto !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .javascript-topic {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .javascript-image {
+    width: 50px;
+    height: 50px;
+  }
+
+  .jsphoto {
+    width: 90vw;
+    margin: 10px auto;
+  }
+
+  iframe {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .websites-link-button {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
