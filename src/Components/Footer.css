@@ -1,7 +1,7 @@
 footer {
   user-select: none;
   background-color: #f9fafb;
-  /* color: #f1f1f1; */
+  color: grey;
   padding: 2rem 1rem;
   text-align: center;
   font-size: 0.95rem;
@@ -23,7 +23,7 @@ footer sup {
 
 @media (max-width: 600px) {
   footer {
-    font-size: 0.85rem;
+    font-size: 0.55rem;
     padding: 1.5rem 1rem;
   }
 }
