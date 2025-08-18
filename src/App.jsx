@@ -7,7 +7,7 @@ import Cplusplus from './Pages/Cplusplus';
 import Java from './Pages/Java';
 import Python from './Pages/Python';
 import Database from './Pages/Database';
-import Htmlcss from './Pages/HtmlCss';
+import Htmlcss from './Pages/Htmlcss';
 import Javascript from './Pages/JavaScript';
 import IntroToProgramming from './Pages/IntroToProgramming';
 
