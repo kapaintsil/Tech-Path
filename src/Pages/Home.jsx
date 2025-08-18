@@ -1,6 +1,6 @@
 import React from 'react'
 import NavBar from '../Components/NavBar';
-import BackgroundSection from '../Components/BackGroundSection';
+import BackgroundSection from '../Components/BackgroundSection';
 import CoursesSection from '../Components/CourseSection';
 import Footer from '../Components/Footer';
 
