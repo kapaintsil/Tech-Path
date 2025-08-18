@@ -4,7 +4,7 @@ import "./Footer.css";
 const Footer = () => (
   <footer>
     <p>
-      A Project By: Emmanuel Fiifi Bambil and Quarshie Bashiru Idrisu <br />
+      A Project By: Emmanuel Fiifi Bambil and Bashiru Idrisu <br />
       Supervised By: Dr. Kwabena Owusu-Agyemang <sup>&#174;</sup>
     </p>
     <p>

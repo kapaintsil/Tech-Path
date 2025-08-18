@@ -47,7 +47,7 @@
   display: none;
   position: absolute;
   right: 0;
-  top: 150%;
+  top: 100%;
   background-color: var(--background-color);
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
