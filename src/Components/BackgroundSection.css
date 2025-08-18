@@ -1,60 +1,82 @@
+/* src/Components/BackgroundSection.css */
+
 .background {
-  background-color: #f9f9f9;
-  padding: 60px 20px;
-  font-family: "Segoe UI", sans-serif;
-  min-height: 100vh;
+  background-color: var(--background-color);
+  padding: var(--spacing-xl) var(--spacing-lg);
+  font-family: var(--font-family-sans-serif);
+  padding-top: 120px; /* Add padding to offset the fixed navbar */
   user-select: none;
 }
 
 .website-name {
   text-align: center;
   font-size: 3rem;
-  font-weight: bold;
-  color: #2c3e50;
-  margin-bottom: 10px;
+  font-weight: var(--font-weight-bold);
+  color: var(--text-color);
+  margin-bottom: var(--spacing-sm);
 }
+
+.website-name h1 {
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+  margin: 0;
+}
+
 
 .motto {
   text-align: center;
-  font-size: 1.4rem;
-  color: #555;
-  margin-bottom: 40px;
+  font-size: 1.25rem;
+  color: var(--text-color-muted);
+  margin-bottom: var(--spacing-xl);
   font-style: italic;
 }
 
 /* Card container */
 .introduction {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 24px;
-  max-width: 1000px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-lg);
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 /* Individual card */
 .introduction p {
-  background-color: #ffffff;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.06);
-  color: #333;
-  font-size: 1rem;
-  line-height: 1.6;
+  background-color: var(--surface-color);
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow-sm);
+  color: var(--text-color);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid var(--border-color);
 }
 
 .introduction p:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+  box-shadow: var(--box-shadow);
 }
 
 /* Responsive */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+  .background {
+    padding: var(--spacing-lg) var(--spacing-md);
+    padding-top: 100px;
+  }
+
   .website-name {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
   }
 
   .motto {
     font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .website-name {
+    font-size: 2rem;
   }
 }

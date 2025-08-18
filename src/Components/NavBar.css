@@ -1,30 +1,32 @@
+/* src/Components/NavBar.css */
 
 .header {
   position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #1e1e2f;
-  color: white;
-  padding: 15px 30px;
-  font-family: "Segoe UI", sans-serif;
-  /* position: relative; */
-  z-index: 10;
-  right: 0;
-  top: 0;
-  left: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  padding: var(--spacing-md) var(--spacing-lg);
+  font-family: var(--font-family-sans-serif);
+  z-index: 1000;
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: var(--box-shadow-sm);
 }
 
 .left-section .codenex-logo-name {
   font-size: 1.5rem;
-  font-weight: bold;
-  color: #ffffff;
+  font-weight: var(--font-weight-bold);
+  color: var(--primary-color);
 }
 
 .right-section {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: var(--spacing-md);
 }
 
 /* Dropdown */
@@ -35,33 +37,37 @@
 .menu-button {
   cursor: pointer;
   font-size: 1.5rem;
-  padding: 5px 10px;
-  color: #ffffff;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  color: var(--text-color);
+  background: none;
+  border: none;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  right: -10px;
-  /* top: 120%; */
-  background-color: #2d2d44;
-  border-radius: 6px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  min-width: 220px;
-  padding: 10px 0;
+  right: 0;
+  top: 150%;
+  background-color: var(--background-color);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  min-width: 250px;
+  padding: var(--spacing-sm) 0;
+  z-index: 1001;
+  border: 1px solid var(--border-color);
 }
 
 .dropdown-content a {
   display: block;
-  padding: 10px 20px;
-  color: #ffffff;
+  padding: var(--spacing-sm) var(--spacing-md);
+  color: var(--text-color);
   text-decoration: none;
-  transition: background 0.3s;
+  transition: background-color 0.2s;
 }
 
 .dropdown-content a:hover {
+  background-color: var(--surface-color);
   cursor: pointer;
-  background-color: #3f3f5e;
 }
 
 .dropdown:hover .dropdown-content {
@@ -75,8 +81,8 @@
   justify-content: center;
   background-color: transparent;
   border: none;
-  color: white;
-  font-size: 1.3rem;
+  color: var(--text-color);
+  font-size: 1.5rem;
   cursor: pointer;
   position: relative;
 }
@@ -84,13 +90,15 @@
 .home-icon-button .tooltip {
   visibility: hidden;
   opacity: 0;
-  background-color: #333;
-  color: #fff;
-  font-size: 0.75rem;
-  padding: 4px 8px;
-  border-radius: 4px;
+  background-color: var(--text-color);
+  color: var(--background-color);
+  font-size: 0.8rem;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--border-radius);
   position: absolute;
-  top: -30px;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
   white-space: nowrap;
   transition: opacity 0.3s;
 }
@@ -98,4 +106,15 @@
 .home-icon-button:hover .tooltip {
   visibility: visible;
   opacity: 1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header {
+    padding: var(--spacing-sm) var(--spacing-md);
+  }
+
+  .left-section .codenex-logo-name {
+    font-size: 1.2rem;
+  }
 }
