@@ -2,7 +2,7 @@
 
 .courses-section {
   padding: var(--spacing-xl) var(--spacing-lg);
-  background-color: var(--surface-color);
+  background-color: none;
   text-align: center;
 }
 

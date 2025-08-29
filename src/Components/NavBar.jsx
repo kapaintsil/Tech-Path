@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./NavBar.css";
+import websiteNavLogo from '/images/tech-path-navlogo.png'
 import ThemeToggle from "./ThemeToggle";
 
 const NavBar = () => {
@@ -19,7 +20,7 @@ const NavBar = () => {
   return (
     <header className="header">
       <div className="left-section">
-        <p className="codenex-logo-name">Tech Path</p>
+        <img src={websiteNavLogo} alt="Tech Path Logo" />
       </div>
 
       <div className="right-section">

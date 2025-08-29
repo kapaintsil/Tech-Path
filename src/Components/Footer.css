@@ -2,7 +2,7 @@
 
 footer {
   user-select: none;
-  background-color: var(--surface-color);
+  background-color: none;
   color: var(--text-color-muted);
   padding: var(--spacing-lg) var(--spacing-md);
   text-align: center;

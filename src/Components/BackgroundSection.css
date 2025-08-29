@@ -24,20 +24,16 @@
   z-index: 1;
 }
 
-.website-name {
+.website-logo {
   text-align: center;
-  font-size: 3rem;
-  font-weight: var(--font-weight-bold);
-  color: #ffffff;
   margin-bottom: var(--spacing-sm);
   position: relative;
   z-index: 2;
 }
 
-.website-name h1 {
-  font-size: inherit;
-  font-weight: inherit;
-  color: inherit;
+.website-logo img {
+  width: 500px;
+  height: auto;
   margin: 0;
 }
 
@@ -92,8 +88,8 @@
     padding-top: 100px;
   }
 
-  .website-name {
-    font-size: 2.5rem;
+  .website-logo img  {
+    width: 400px;
   }
 
   .motto {
@@ -102,7 +98,7 @@
 }
 
 @media (max-width: 576px) {
-  .website-name {
-    font-size: 2rem;
+  .website-logo img {
+    width: 300px;
   }
 }
