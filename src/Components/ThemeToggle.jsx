@@ -24,7 +24,7 @@ const ThemeToggle = () => {
   return (
     <button onClick={toggleTheme} className="theme-toggle-button" aria-label="Toggle theme">
       {isDarkMode ? (
-        <i className="fa-solid fa-sun"></i>
+        <i className="fa-solid fa-sun"></i> 
       ) : (
         <i className="fa-solid fa-moon"></i>
       )}

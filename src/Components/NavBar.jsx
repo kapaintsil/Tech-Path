@@ -3,19 +3,10 @@ import { useNavigate } from "react-router-dom";
 import "./NavBar.css";
 import websiteNavLogo from '/images/tech-path-navlogo.png'
 import ThemeToggle from "./ThemeToggle";
+import navItems from "../Data/NavItems";
 
 const NavBar = () => {
   const navigate = useNavigate();
-
-  const navItems = [
-    { label: "Introduction To Programming", path: "/introtoprogramming" },
-    { label: "C++", path: "/cplusplus" },
-    { label: "Java", path: "/java" },
-    { label: "Python", path: "/python" },
-    { label: "Database And SQL", path: "/database" },
-    { label: "HTML And CSS", path: "/htmlcss" },
-    { label: "JavaScript", path: "/javascript" },
-  ];
 
   return (
     <header className="header">

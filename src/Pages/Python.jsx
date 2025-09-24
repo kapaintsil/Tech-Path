@@ -1,6 +1,7 @@
 import React from 'react';
 import NavBar from '../Components/NavBar';
 import Footer from '../Components/Footer';
+import pythonLogo from '/Course-Logos/python-logo.png';
 import './CoursePage.css'; // Changed import
 
 const Python = () => {
@@ -10,7 +11,7 @@ const Python = () => {
       <header className="course-header">
         <img
           className="course-logo"
-          src="/Course-Logos/python-logo.png"
+          src={pythonLogo}
           alt="Python Logo"
         />
         <h1 className="course-title">

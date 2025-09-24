@@ -1,14 +1,15 @@
 import React from 'react';
 import NavBar from '../Components/NavBar';
 import Footer from '../Components/Footer';
-import './CoursePage.css'; // Changed import
+import javaLogo from '/Course-Logos/java-logo.png';
+import './CoursePage.css';
 
 function Java() {
   return (
     <div className="course-page">
       <NavBar />
       <header className="course-header">
-        <img className="course-logo" src="/Course-Logos/java-logo.png" alt="Java Logo" />
+        <img className="course-logo" src={javaLogo} alt="Java Logo" />
         <h1 className="course-title">
           Programming With <span className="highlight">Java</span>
         </h1>

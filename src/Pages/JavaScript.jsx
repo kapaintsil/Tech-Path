@@ -1,14 +1,15 @@
 import React from 'react';
 import NavBar from '../Components/NavBar';
 import Footer from '../Components/Footer';
-import './CoursePage.css'; // Changed import
+import javaScriptLogo from '/Course-Logos/javascript-logo.png';
+import './CoursePage.css'; 
 
 function JavaScript() {
   return (
     <div className="course-page">
       <NavBar />
       <header className="course-header">
-        <img className="course-logo" src="/images/javascript-logo.png" alt="JavaScript Logo" />
+        <img className="course-logo" src={javaScriptLogo} alt="JavaScript Logo" />
         <h1 className="course-title">
           <span className="highlight">JavaScript</span> Programming
         </h1>

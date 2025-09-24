@@ -1,15 +1,16 @@
 import React from 'react';
 import NavBar from '../Components/NavBar';
 import Footer from '../Components/Footer';
+import sqlLogo from '/Course-Logos/sql-logo-2.png';
 import database_files from '../Data/DatabaseFiles';
-import './CoursePage.css'; // Changed import
+import './CoursePage.css';
 
 function Database() {
   return (
     <div className="course-page">
       <NavBar />
       <header className="course-header">
-        <img className="course-logo" src="/images/sql-logo-2.png" alt="SQL Logo" />
+        <img className="course-logo" src={sqlLogo} alt="SQL Logo" />
         <h1 className="course-title">
           <span className="highlight">SQL</span> and <span className="highlight">Database Management</span>
         </h1>
