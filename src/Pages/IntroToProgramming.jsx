@@ -3,7 +3,7 @@ import NavBar from '../Components/NavBar';
 import Footer from '../Components/Footer';
 import './CoursePage.css'; // Changed import
 
-function IntroToProgramming() { // Fixed function name
+function IntroToProgramming() { 
   return (
     <div className="course-page">
       <NavBar />
@@ -12,6 +12,7 @@ function IntroToProgramming() { // Fixed function name
           className="course-logo"
           src="/Course-Logos/intro-to-programming.png"
           alt="Intro to Programming"
+          draggable={false}
         />
         <h1 className="course-title">
           <span className="highlight">Introduction To Programming</span>

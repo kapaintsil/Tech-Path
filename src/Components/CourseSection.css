@@ -22,12 +22,12 @@
 }
 
 .course-button {
+  cursor: pointer;
   user-select: none;
   background-color: var(--background-color);
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow-sm);
   padding: var(--spacing-lg);
-  cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
